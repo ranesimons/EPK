@@ -41,11 +41,24 @@
       margin: 10px;
       border-radius: 8px;
     }
+    .icons div {
+      display: flex;
+      justify-content: center; /* Centers the row */
+      align-items: center;     /* Aligns them vertically */
+      gap: 20px;               /* Space between icons */
+      flex-wrap: wrap;         /* Allows them to wrap on tiny screens */
+      margin-top: 20px;
+    }
     .icons img {
-      width: 100%;
-      max-width: 280px;
-      margin: 10px;
-      border-radius: 3px;
+      width: 40px;             /* Forces all icons to the same width */
+      height: 40px;            /* Forces all icons to the same height */
+      object-fit: contain;     /* Ensures icons aren't stretched/distorted */
+      transition: transform 0.2s ease-in-out;
+      filter: brightness(0) invert(1); /* Optional: makes colored icons pure white to match your theme */
+    }
+    .icons img:hover {
+      transform: scale(1.1);   /* Subtle pop effect on hover */
+      filter: brightness(1) invert(0); /* Optional: shows original color on hover */
     }
     .headers {
       width: 100%;
@@ -75,21 +88,15 @@
   </p>
 </section>
 
-<section class="icons">
+<section class="icons centers">
   <h2>Socials</h2>
-  <p>
-    <!-- <a href="https://www.ranesimons.com">Website</a> ·
-    <a href="https://www.instagram.com/ranesimons">Instagram</a> ·
-    <a href="https://open.spotify.com/artist/3oVE1Sv0NesXq1uTYsJ0SC">Spotify</a> ·
-    <a href="https://www.youtube.com/@ranesimons">YouTube</a> ·
-    <a href="https://www.tiktok.com/@ranesimons">TikTok</a> -->
-    <a href="https://www.facebook.com/ranesimons"><img src="firstPageFacebook.png" /></a>
-    <a href="https://www.x.com/ranesimons"><img src="firstPageX.png" /></a>
-    <a href="https://www.instagram.com/ranesimons"><img src="firstPageInstagram.png" /></a>
-    <a href="https://www.youtube.com/@ranesimons"><img src="firstPageYoutube.png" /></a>
-    <a href="https://www.tiktok.com/@ranesimons"><img src="firstPageTiktok.png" /></a>
-  </p>
-  <!-- <img src="firstPageFooter.png" /> -->
+  <div class="social-wrapper">
+    <a href="https://www.facebook.com/ranesimons"><img src="firstPageFacebook.png" alt="Facebook" /></a>
+    <a href="https://www.x.com/ranesimons"><img src="firstPageX.png" alt="X" /></a>
+    <a href="https://www.instagram.com/ranesimons"><img src="firstPageInstagram.png" alt="Instagram" /></a>
+    <a href="https://www.youtube.com/@ranesimons"><img src="firstPageYoutube.png" alt="YouTube" /></a>
+    <a href="https://www.tiktok.com/@ranesimons"><img src="firstPageTiktok.png" alt="TikTok" /></a>
+  </div>
 </section>
 
 <section class="centers">
