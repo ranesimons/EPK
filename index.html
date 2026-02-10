@@ -88,6 +88,23 @@
       transform: scale(1.1);   /* Subtle pop effect on hover */
       filter: brightness(1) invert(0); /* Optional: shows original color on hover */
     }
+    .header-container {
+      position: relative;   /* This is the "anchor" for the overlapping image */
+      display: inline-block; /* Keeps the container the size of your images */
+      margin-bottom: 20px;
+    }
+    .header-img {
+      width: 200px;         /* Adjust as needed */
+      display: block;
+    }
+    .name-img {
+      position: absolute;   /* Removes it from the normal flow to overlap */
+      top: 60%;             /* Adjust this % to move it up or down */
+      left: 50%;            /* Centers it horizontally */
+      transform: translate(-50%, 0); /* Perfectly aligns the center point */
+      width: 150px;         /* Adjust as needed */
+      z-index: 10;          /* Ensures it stays on top */
+    }
     .headers {
       width: 100%;
       margin-bottom: 20px;
@@ -109,8 +126,12 @@
 <body>
 
 <section class="hero">
-  <img src="firstPageHeader.png" class="headers"/>
-  <img src="firstPageName.png" />
+  <!-- <img src="firstPageHeader.png" class="headers"/>
+  <img src="firstPageName.png" /> -->
+  <div class="header-container">
+    <img src="firstPageHeader.png" class="header-img"/>
+    <img src="firstPageName.png" class="name-img" />
+  </div>
   <p>OFFICIAL PRESS KIT</p>
   <p>FFO: Ed Sheeran, John Mayer, Jason Mraz</p>
   <p>
