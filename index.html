@@ -106,6 +106,12 @@
       display: block;
       min-height: 300px;  /* Reserve space while loading */
     }
+
+    @media (min-width: 769px) {
+      .header-img {
+        min-height: 600px;  /* Larger space for desktop/laptop */
+      }
+    }
     .name-img {
       position: absolute;   /* Removes it from the normal flow to overlap */
       top: 60%;             /* Adjust this % to move it up or down */
