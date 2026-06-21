@@ -31,19 +31,19 @@
     }
     .hero {
       text-align: center;
-      background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("firstPageFooter.jpg"); /* Background fallback */
+      background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("firstPageFooter.webp");
       background-size: cover;
       background-position: center;
     }
     .release {
       text-align: center;
-      background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("secondPageFooter.png"); /* Background fallback */
+      background: rgba(15,15,15,0.9);
       background-size: cover;
       background-position: center;
     }
     .video {
       text-align: center;
-      background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("thirdPageFooter.png"); /* Background fallback */
+      background: rgba(15,15,15,0.9);
       background-size: cover;
       background-position: center;
     }
@@ -54,7 +54,7 @@
     }
     .press {
       text-align: center;
-      background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("fourthPageBackground.jpg"); /* Background fallback */
+      background: rgba(15,15,15,0.9);
       background-size: cover;
       background-position: center;
     }
@@ -64,7 +64,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("fifthPageBackground.png"); /* Background fallback */
+      background: rgba(15,15,15,0.9);
       background-size: cover;
       background-position: center;
     }
@@ -79,46 +79,46 @@
     }
     .icons {
       display: flex;
-      justify-content: center; /* Centers the row */
-      align-items: center;     /* Aligns them vertically */
-      gap: 21px;               /* Space between icons */
-      flex-wrap: wrap;         /* Allows them to wrap on tiny screens */
+      justify-content: center;
+      align-items: center;
+      gap: 21px;
+      flex-wrap: wrap;
       margin-top: 21px;
-      margin-bottom: 42px; /* adjust value as needed */
+      margin-bottom: 42px;
     }
     .icons img {
-      width: 40px;             /* Forces all icons to the same width */
-      height: 40px;            /* Forces all icons to the same height */
-      object-fit: contain;     /* Ensures icons aren't stretched/distorted */
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
       transition: transform 0.2s ease-in-out;
     }
     .icons img:hover {
-      transform: scale(1.1);   /* Subtle pop effect on hover */
-      filter: brightness(1) invert(0); /* Optional: shows original color on hover */
+      transform: scale(1.1);
+      filter: brightness(1) invert(0);
     }
     .header-container {
-      position: relative;   /* This is the "anchor" for the overlapping image */
-      display: inline-block; /* Keeps the container the size of your images */
+      position: relative;
+      display: inline-block;
       margin-bottom: 20px;
     }
     .header-img {
-      width: 100%;        /* Adjust as needed */
+      width: 100%;
       display: block;
-      min-height: 300px;  /* Reserve space while loading */
+      min-height: 300px;
     }
 
     @media (min-width: 769px) {
       .header-img {
-        min-height: 700px;  /* Larger space for desktop/laptop */
+        min-height: 700px;
       }
     }
     .name-img {
-      position: absolute;   /* Removes it from the normal flow to overlap */
-      top: 60%;             /* Adjust this % to move it up or down */
-      left: 50%;            /* Centers it horizontally */
-      transform: translate(-50%, 0); /* Perfectly aligns the center point */
-      width: 100%;         /* Adjust as needed */
-      z-index: 10;          /* Ensures it stays on top */
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      z-index: 10;
       max-width: 800px;
       margin: 0 auto;
       padding: 0 40px;
@@ -172,14 +172,14 @@
 
 <section class="hero">
   <div class="header-container">
-    <img src="firstPageHeader.jpg" class="header-img"/>
+    <img src="firstPageHeader.webp" class="header-img" fetchpriority="high"/>
   </div>
   <div style="max-width: 800px; margin: 0 auto; padding: 0 40px;">
     <p>
       Rane Simons is an alt rock singer, songwriter, producer, and multi-instrumentalist whose music is poetically prophetic.  Inspired by surviving a brief encounter with a serial killer, he crafts songs that transmute a deep experience of darkness into themes of resilience and being fully alive.  Blending elements of indie rock, pop, and R&B, his sound is fluid, immersive, and built to resonate long after the final note.
     </p>
     <p>
-      Based in Austin, Texas, Rane embraces a deeply DIY approach to his work, remaining involved in nearly every step of the creative process.  From songwriting and production to visual direction and release strategy, each project is treated as a complete world rather than a standalone track.  This independence allows his music to stay unfiltered and true to his lived experiences, free from trend-chasing or excessive polish.
+      Based in Austin, Texas, he embraces a deeply DIY approach to his work by remaining involved in nearly every step of the creative process.  From songwriting and production to visual direction and release strategy, each project is treated as a complete world rather than a standalone track.  This independence allows his music to stay unfiltered and true to his lived experiences, free from trend-chasing or excessive polish.
     </p>
     <p>
       He got to meet Ringo Starr last summer in Beverly Hills because his original song Knock On Wood was chosen to be beamed up into space along with a song written by Ringo.
@@ -187,80 +187,101 @@
   </div>
   <h2>Socials</h2>
   <div class="icons">
-    <a href="https://www.facebook.com/ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageFacebook.png" alt="Facebook" /></a>
-    <a href="https://www.x.com/ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageX.png" alt="X" /></a>
-    <a href="https://www.instagram.com/ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageInstagram.png" alt="Instagram" /></a>
-    <a href="https://www.youtube.com/@ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageYoutube.png" alt="YouTube" /></a>
-    <a href="https://www.tiktok.com/@ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageTiktok.png" alt="TikTok" /></a>
+    <a href="https://www.facebook.com/ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageFacebook.png" alt="Facebook" loading="lazy" /></a>
+    <a href="https://www.x.com/ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageX.png" alt="X" loading="lazy" /></a>
+    <a href="https://www.instagram.com/ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageInstagram.png" alt="Instagram" loading="lazy" /></a>
+    <a href="https://www.youtube.com/@ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageYoutube.png" alt="YouTube" loading="lazy" /></a>
+    <a href="https://www.tiktok.com/@ranesimons" target="_blank" rel="noopener noreferrer"><img src="firstPageTiktok.png" alt="TikTok" loading="lazy" /></a>
   </div>
 </section>
 
-<section class="release">
-  <img src="secondPageHeader.jpg" class="headers"/>
+<section class="release" data-bg="secondPageFooter.webp">
+  <img src="secondPageHeader.jpg" class="headers" loading="lazy"/>
   <h2>Most Recent Release</h2>
   <h2>Intertwined</h2>
-  <h2>Official Music Video</h2>
-  <img src="secondPageSong.png" class="album"/>
+  <h2>First Full Album</h2>
+  <img src="secondPageSong.webp" class="album" loading="lazy"/>
   <h2>Genre: Alt Rock</h2>
   <a href="https://www.youtube.com/watch?v=XbUSZ740c78" class="youtube-link" target="_blank" rel="noopener noreferrer">Watch It On</a>
-  <a href="https://www.youtube.com/watch?v=XbUSZ740c78" class="youtube-link" target="_blank" rel="noopener noreferrer"><img src="secondPageYoutube.png" class="youtube"/></a>
+  <a href="https://www.youtube.com/watch?v=XbUSZ740c78" class="youtube-link" target="_blank" rel="noopener noreferrer"><img src="secondPageYoutube.png" class="youtube" loading="lazy"/></a>
   <h2>Listen</h2>
   <div class="icons">
-    <a href="https://open.spotify.com/track/0e7XaWuTs8tLvcIBDft4Ye" target="_blank" rel="noopener noreferrer"><img src="secondPageSpotify.png" alt="Spotify" /></a>
-    <a href="https://music.apple.com/us/album/intertwined-single/1869203074" target="_blank" rel="noopener noreferrer"><img src="secondPageApple.svg" alt="Apple" /></a>
-    <a href="https://ranesimons.bandcamp.com/track/intertwined" target="_blank" rel="noopener noreferrer"><img src="secondPageBandcamp.png" alt="Bandcamp" /></a>
-    <a href="https://music.youtube.com/playlist?list=OLAK5uy_mohwuEnKdbUwIhjsUk0sF2qBvwBAWnUrQ" target="_blank" rel="noopener noreferrer"><img src="secondPageMusic.jpg" alt="YouTube" /></a>
-    <a href="https://music.amazon.com/albums/B0GGV6QVFZ" target="_blank" rel="noopener noreferrer"><img src="secondPageAmazon.png" alt="Amazon" /></a>
+    <a href="https://open.spotify.com/track/0e7XaWuTs8tLvcIBDft4Ye" target="_blank" rel="noopener noreferrer"><img src="secondPageSpotify.png" alt="Spotify" loading="lazy" /></a>
+    <a href="https://music.apple.com/us/album/intertwined-single/1869203074" target="_blank" rel="noopener noreferrer"><img src="secondPageApple.svg" alt="Apple" loading="lazy" /></a>
+    <a href="https://ranesimons.bandcamp.com/track/intertwined" target="_blank" rel="noopener noreferrer"><img src="secondPageBandcamp.png" alt="Bandcamp" loading="lazy" /></a>
+    <a href="https://music.youtube.com/playlist?list=OLAK5uy_mohwuEnKdbUwIhjsUk0sF2qBvwBAWnUrQ" target="_blank" rel="noopener noreferrer"><img src="secondPageMusic.svg" alt="YouTube Music" loading="lazy" /></a>
+    <a href="https://music.amazon.com/albums/B0GGV6QVFZ" target="_blank" rel="noopener noreferrer"><img src="secondPageAmazon.png" alt="Amazon" loading="lazy" /></a>
   </div>
 </section>
 
-<section class="video">
+<section class="video" data-bg="thirdPageFooter.webp">
   <h2>Videos</h2>
   <p>
-    <a href="https://www.youtube.com/shorts/RDZ57IS8ZbU" target="_blank" rel="noopener noreferrer"><img src="thirdPageKnockOnWood.avif" alt="Knock On Wood" /></a>
-    <a href="https://www.youtube.com/shorts/FVLepqmu3xA" target="_blank" rel="noopener noreferrer"><img src="thirdPageMoody.avif" alt="Moody" /></a>
-    <a href="https://www.youtube.com/shorts/zaX_cfXshEk" target="_blank" rel="noopener noreferrer"><img src="thirdPageGrateful.avif" alt="Grateful" /></a>
-    <a href="https://www.youtube.com/shorts/qEX0N3Ngbls" target="_blank" rel="noopener noreferrer"><img src="thirdPageDevout.avif" alt="Devout" /></a>
-    <a href="https://www.youtube.com/shorts/-JvfGMUyYQE" target="_blank" rel="noopener noreferrer"><img src="thirdPageLight.avif" alt="Got The Light" /></a>
-    <a href="https://www.youtube.com/shorts/-JvfGMUyYQE" target="_blank" rel="noopener noreferrer"><img src="thirdPageEasy.avif" alt="Why Is It So Easy?" /></a>
+    <a href="https://www.youtube.com/shorts/RDZ57IS8ZbU" target="_blank" rel="noopener noreferrer"><img src="thirdPageKnockOnWood.avif" alt="Knock On Wood" loading="lazy" /></a>
+    <a href="https://www.youtube.com/shorts/FVLepqmu3xA" target="_blank" rel="noopener noreferrer"><img src="thirdPageMoody.avif" alt="Moody" loading="lazy" /></a>
+    <a href="https://www.youtube.com/shorts/zaX_cfXshEk" target="_blank" rel="noopener noreferrer"><img src="thirdPageGrateful.avif" alt="Grateful" loading="lazy" /></a>
+    <a href="https://www.youtube.com/shorts/qEX0N3Ngbls" target="_blank" rel="noopener noreferrer"><img src="thirdPageDevout.avif" alt="Devout" loading="lazy" /></a>
+    <a href="https://www.youtube.com/shorts/-JvfGMUyYQE" target="_blank" rel="noopener noreferrer"><img src="thirdPageLight.avif" alt="Got The Light" loading="lazy" /></a>
+    <a href="https://www.youtube.com/shorts/-JvfGMUyYQE" target="_blank" rel="noopener noreferrer"><img src="thirdPageEasy.avif" alt="Why Is It So Easy?" loading="lazy" /></a>
   </p>
 </section>
 
-<section class="press">
+<section class="press" data-bg="fourthPageBackground.webp">
   <h2>Press</h2>
   <div class="press-item" style="display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 800px; min-height: 100px; margin: 0 3vw;">
   <a href="https://www.soaplifemagazine.com/2026/04/rane-simons-plays-it-cool-in-new.html" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
-  <img src="fourthPageSoap.png" class="website" alt="The Sounds Won't Stop" style="width: 39vw; height: auto;" />
+  <img src="fourthPageSoap.webp" class="website" alt="The Sounds Won't Stop" style="width: 39vw; height: auto;" loading="lazy" />
   </a>
   <blockquote style="margin: 0; font-style: italic; width: 59vw; border-left: none; padding-left: 0; display: flex; align-items: center; text-align: center;">
-  “moody, sensual textures while keeping a cool emotional distance”
+  "moody, sensual textures while keeping a cool emotional distance"
   </blockquote>
   </div>
   <div class="press-item" style="display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 800px; min-height: 100px; margin: 0 3vw;">
   <a href="https://www.tumblr.com/moochilatv/814085217070481408/rane-simons-presents-before-i-die" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
-  <img src="fourthPageMooch.png" class="website" alt="The Sounds Won't Stop" style="width: 39vw; height: auto;" />
+  <img src="fourthPageMooch.webp" class="website" alt="The Sounds Won't Stop" style="width: 39vw; height: auto;" loading="lazy" />
   </a>
   <blockquote style="margin: 0; font-style: italic; width: 59vw; border-left: none; padding-left: 0; display: flex; align-items: center; text-align: center;">
-  “Indie rock music lover? Check this song”
+  "Indie rock music lover? Check this song"
   </blockquote>
   </div>
   <div class="press-item" style="display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 800px; min-height: 100px; margin: 0 3vw;">
   <a href="https://www.foxfiremagazine.com/2026/04/rane-simons-channels-past-life-emotion.html" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
-  <img src="fourthPageFox.png" class="website" alt="Fox Fire Magazine" style="width: 39vw; height: auto;" />
+  <img src="fourthPageFox.webp" class="website" alt="Fox Fire Magazine" style="width: 39vw; height: auto;" loading="lazy" />
   </a>
   <blockquote style="margin: 0; font-style: italic; width: 59vw; border-left: none; padding-left: 0; display: flex; align-items: center; text-align: center;">
-  “The melody has a quiet exposure that makes us want to sit with the feeling rather than rush through it”
+  "The melody has a quiet exposure that makes us want to sit with the feeling rather than rush through it"
   </blockquote>
   </div>
 </section>
 
-<section class="contact">
+<section class="contact" data-bg="fifthPageBackground.webp">
   <h2>Contact</h2>
-  <img src="fifthPageName.png" />
+  <img src="fifthPageName.png" loading="lazy" />
   <p>
     <a href="mailto:rane@ranesimons.com">rane@ranesimons.com</a>
   </p>
 </section>
+
+<script>
+  (function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var bg = el.dataset.bg;
+          if (bg) {
+            el.style.backgroundImage = 'linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url("' + bg + '")';
+            observer.unobserve(el);
+          }
+        }
+      });
+    }, { rootMargin: '200px' });
+
+    document.querySelectorAll('[data-bg]').forEach(function(el) {
+      observer.observe(el);
+    });
+  })();
+</script>
 
 </body>
 </html>
